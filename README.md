@@ -9,8 +9,10 @@ This is the backend repo for TDP-Hackathon project :stuck_out_tongue_winking_eye
 ### Run
 
 Go [here](https://u26y0c7lh4.execute-api.us-east-2.amazonaws.com/dev/nutrition), then add the queryParameter `country=[COUNTRY_NAME]`. For example,
-- `https://u26y0c7lh4.execute-api.us-east-2.amazonaws.com/dev/nutrition/?country=ghana` (success:joy:)
-- `https://u26y0c7lh4.execute-api.us-east-2.amazonaws.com/dev/nutrition/?country=nooo` (fail:cry:)
+- Success :joy:
+- `https://u26y0c7lh4.execute-api.us-east-2.amazonaws.com/dev/nutrition/?country=ghana` 
+- Failure :cry:
+- `https://u26y0c7lh4.execute-api.us-east-2.amazonaws.com/dev/nutrition/?country=nooo`
 
 ### Response Example
 ```
