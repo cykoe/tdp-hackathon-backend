@@ -1,0 +1,15 @@
+# system
+.idea
+
+# package directories
+node_modules
+jspm_packages
+
+# Serverless directories
+.serverless
+
+# tesing
+event.json
+diet.csv
+.nyc_output
+config.json

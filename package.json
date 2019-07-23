@@ -1,0 +1,24 @@
+{
+  "name": "tdphackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/handlers/handler.js",
+  "scripts": {
+    "test": "eslint . && mocha --recursive",
+    "coverage": "nyc mocha --recursive"
+  },
+  "author": "charlie",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.497.0",
+    "csv-parser": "^2.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.1.0",
+    "eslint-config-google": "^0.13.0",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
+    "sinon": "^7.3.2"
+  }
+}
