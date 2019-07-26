@@ -18,3 +18,10 @@ exports.getNutrition = async (event, context) => {
       .then((res) => successResponse(res))
       .catch((err) => errorResponse(err.message, context.awsRequestId));
 };
+
+exports.getCountries = async (event, conetxt) => {
+  return fileFetcher
+      .getCountries(process.env.CSVFILENAME)
+      .then((res) => successResponse(res))
+      .catch((err) => errorResponse(err.message, context.awsRequestId));
+};

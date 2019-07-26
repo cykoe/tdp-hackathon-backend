@@ -19,6 +19,9 @@ provider:
   profile: tdpHackathon
   stage: dev
   region: us-east-2
+  environment:
+    BUCKETNAME: ${file(./config.json):BUCKETNAME}
+    CSVFILENAME: ${file(./config.json):CSVFILENAME}
 
 functions:
   hello:
@@ -28,9 +31,14 @@ functions:
           method: get
           path: nutrition
           cors: true
-    environment:
-      BUCKETNAME: ${file(./config.json):BUCKETNAME}
-      CSVFILENAME: ${file(./config.json):CSVFILENAME}
+
+  getCountries:
+    handler: src/handlers/handler.getCountries
+    events:
+      - http:
+          method: get
+          path: countries
+          cors: true
 
 package:
   exclude:

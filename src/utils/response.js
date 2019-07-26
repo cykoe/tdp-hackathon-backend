@@ -6,6 +6,9 @@ exports.errorResponse = (errorMessage, awsRequestId) => {
       message: errorMessage,
       reference: awsRequestId,
     }),
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
   };
 };
 
@@ -16,6 +19,9 @@ exports.successResponse = (message, options) => {
       success: true,
       message,
     }),
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
     ...options,
   };
 };
